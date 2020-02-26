@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Stepper Form</title>
+  </head>
+  <body>
+    <h1>Stepper Form</h1>
+    <ul id="progress">
+      <li>Step 1</li>
+      <li>Step 2</li>
+      <li>Step 3</li>
+      <li>Step 4</li>
+    </ul>
+    <div id="form">
+      <form>
+        <!-- Step 1 -->
+        <fieldset data-section="username" class="section">
+          <input type="text" id="username" placeholder="Your Username" />
+        </fieldset>
+        <fieldset data-section="email" class="section">
+          <input type="email" id="email" placeholder="Your Email" />
+        </fieldset>
+        <!-- Step 2 -->
+        <fieldset data-section="password" class="section">
+          <input type="password" id="password" placeholder="Your Password" />
+        </fieldset>
+        <!-- Step 3 -->
+        <fieldset data-section="validate" class="section"></fieldset>
+        <p id="error"></p>
+        <button id="previous" class="step-btn">Previous</button>
+        <button id="next" class="step-btn">Next</button>
+        <button id="submit" class="step-btn">Submit</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

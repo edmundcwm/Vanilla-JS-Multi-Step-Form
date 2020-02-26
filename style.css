@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0 10px;
+  max-width: 650px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.section,
+.step-btn {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.step-btn.active {
+  display: inline-block;
+}
+
+#error {
+  color: #df5151;
+  font-size: 13px;
+}
+
+#form {
+  margin: 20px 0;
+}
+
+#progress {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#progress > li {
+  opacity: 0.2;
+}
+
+#progress .active {
+  opacity: 1;
+}
+
+ul {
+  list-style-type: none;
+}
